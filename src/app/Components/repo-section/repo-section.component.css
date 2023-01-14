@@ -1,0 +1,9 @@
+.row>* {
+    width: 50%;
+}
+
+@media screen and (max-width:768px) {
+    .row>* {
+        width: 100%;
+    }
+}

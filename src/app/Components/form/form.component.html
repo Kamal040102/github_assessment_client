@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-center align-items-center h-100">
+    <form class="p-5 rounded border border-dark" (submit)="showResult()">
+        <div class="mb-3">
+            <label for="username" class="form-label">Github Username</label>
+            <input type="text" class="form-control" id="username" [(ngModel)]="username" name="username">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="privacyCheck" [(ngModel)]="privacyCheck"
+                name="privacyCheck">
+            <label class="form-check-label" for="privacyCheck">I agree, i am using this for experimental
+                purposes.</label>
+        </div>
+        <button type="submit" class="btn btn-success w-100 mt-4">Get User</button>
+    </form>
+</div>

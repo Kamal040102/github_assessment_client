@@ -1,0 +1,9 @@
+.userImage {
+    display: flex;
+    justify-content: center;
+}
+
+.userImage>img {
+    border: 1px solid black;
+    border-radius: 50%;
+}
