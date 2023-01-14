@@ -1,12 +1,13 @@
-<div class="col-12 my-3">
-    <div class="card repo-cards">
-        <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-                content.</p>
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+<a href={{repo.html_url}} target="_blank" class="repo-cards-link">
+    <div class="col-12 my-3">
+        <div class="card repo-cards">
+            <div class="card-body">
+                <h4 class="card-title text-primary">{{repo.name}}</h4>
+                <h6 class="card-text text-dark mt-1 mb-4">{{repo.description}}</h6>
+                <span *ngFor="let badge of repo.topics">
+                    <app-primary-badge [badge]="badge"></app-primary-badge>
+                </span>
+            </div>
         </div>
     </div>
-</div>
+</a>

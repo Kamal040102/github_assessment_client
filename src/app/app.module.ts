@@ -18,6 +18,7 @@ import { UserNotFoundErrorComponent } from './Components/user-not-found-error/us
 import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RepoCardComponent } from './Components/repo-card/repo-card.component';
+import { PrimaryBadgeComponent } from './Components/primary-badge/primary-badge.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RepoCardComponent } from './Components/repo-card/repo-card.component';
     UserInformationDataComponent,
     PageNotFoundErrorComponent,
     UserNotFoundErrorComponent,
-    RepoCardComponent
+    RepoCardComponent,
+    PrimaryBadgeComponent
   ],
   imports: [
     BrowserModule,

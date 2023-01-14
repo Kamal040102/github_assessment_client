@@ -1,3 +1,7 @@
 .repo-cards {
     cursor: pointer;
 }
+
+.repo-cards-link {
+    text-decoration: none;
+}
