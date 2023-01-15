@@ -9,6 +9,7 @@ import { GithubService } from 'src/app/Services/github.service';
 
 export class RepoSectionComponent {
   repos: any;
+  page: number = 1;
   constructor(private githubService: GithubService){
     this.githubService.repoData$.subscribe(data => {
       this.repos = data.data

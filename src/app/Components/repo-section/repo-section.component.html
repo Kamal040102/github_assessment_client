@@ -1,5 +1,8 @@
-<div class="row">
-    <span *ngFor="let repo of repos">
+<div class="row mb-5">
+    <span *ngFor="let repo of repos | paginate: { itemsPerPage: 10, currentPage: page }">
         <app-repo-card [repo]="repo"></app-repo-card>
     </span>
+</div>
+<div class="d-flex pt-3 justify-content-center">
+    <pagination-controls (pageChange)="page=$event"></pagination-controls>
 </div>

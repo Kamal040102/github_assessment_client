@@ -19,6 +19,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RepoCardComponent } from './Components/repo-card/repo-card.component';
 import { PrimaryBadgeComponent } from './Components/primary-badge/primary-badge.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { PrimaryBadgeComponent } from './Components/primary-badge/primary-badge.
     FormsModule,
     HttpClientModule,
     BrowserAnimationsModule,
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
