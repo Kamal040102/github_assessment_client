@@ -6,6 +6,12 @@ This repo is for the successful completion of the task for the position of Full 
 
 It is a SPA build on MEAN Stack, which lists all the github repository of a user on application.
 
+## Tech Stack
+
+**Frontend:** Angular15, Bootstrap CSS
+
+**Server:** NodeJS, ExpressJS
+
 ### Clone
 
 Clone with git-bash or terminal
